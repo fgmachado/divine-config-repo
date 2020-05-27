@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    platform: postgres
+    username: divine
+    password: divine
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+      jpa:
+        hibernate:
+          ddl-auto: create-drop
+
+server:
+  port: 8081
