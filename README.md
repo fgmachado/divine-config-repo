@@ -1,0 +1,1 @@
+# divine-config-repo
