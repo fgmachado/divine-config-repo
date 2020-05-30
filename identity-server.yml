@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://divine-management-service-db:5433/postgres
+    url: jdbc:postgresql://divine-management-service-db:5432/postgres
     platform: postgres
     username: divine
     password: divine
@@ -24,3 +24,8 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://service-discovery:8761/eureka/
+
+security:
+  oauth2:
+    resource:
+      id: bcrypt
