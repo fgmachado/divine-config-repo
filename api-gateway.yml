@@ -8,4 +8,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-zone: http://service-discovery:8761/
+      default-zone: http://localhost:8761/
