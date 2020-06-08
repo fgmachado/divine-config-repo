@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://divine-management-service-db:5434/postgres
+    platform: postgres
+    username: divine
+    password: divine
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+      jpa:
+        hibernate:
+          ddl-auto: create-drop
+
+server:
+  port: 9002
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: service-discovery
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://service-discovery:8761/eureka/
